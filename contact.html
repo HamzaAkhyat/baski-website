@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact — BASKI Automation</title>
+<meta name="description" content="Start your automation project — request a custom script, Android app, website or n8n workflow from BASKI Automation."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff571a'/%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tw-config.js"></script>
+<link href="assets/css/site.css" rel="stylesheet"/>
+</head>
+<body class="flex flex-col min-h-screen font-body-md overflow-x-hidden bg-background selection:bg-primary-container selection:text-white">
+<div class="scanline"></div>
+
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center px-6 md:px-margin py-base max-w-container-max mx-auto h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span>BASKI</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono uppercase text-primary border-b-2 border-primary pb-1" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block bg-primary-container text-white font-label-mono text-label-mono uppercase px-6 py-3 font-bold active:translate-y-1 brutalist-shadow no-transition animate-pulse-neon" href="#contact-form">
+GET STARTED
+</a>
+<button aria-label="Open menu" class="md:hidden text-on-surface" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden border-t border-surface-variant bg-background/95 backdrop-blur-md" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 gap-4 font-label-mono text-label-mono uppercase">
+<a class="text-on-surface" href="index.html">Home</a>
+<a class="text-on-surface" href="solutions.html">Solutions</a>
+<a class="text-on-surface" href="process.html">Process</a>
+<a class="text-primary" href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<main class="max-w-container-max mx-auto px-6 md:px-margin py-20 bg-transparent w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Form Section -->
+<section class="lg:col-span-7">
+<div class="mb-12">
+<h1 class="font-display-xl text-headline-lg-mobile md:text-headline-lg mb-4 text-white">INITIATE_PROTOCOL</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">
+Tell me what you want to automate — a script, an Android app, a website or an n8n workflow.
+I reply within 24 hours (business days).
+</p>
+</div>
+<form class="space-y-10" id="contact-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary-container uppercase" for="cf-name">User.Identity</label>
+<input class="w-full bg-surface-container-low/50 backdrop-blur-sm brutalist-border p-4 text-white font-body-md focus:bg-surface-container-low" id="cf-name" name="name" placeholder="FULL NAME" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary-container uppercase" for="cf-email">User.Endpoint</label>
+<input class="w-full bg-surface-container-low/50 backdrop-blur-sm brutalist-border p-4 text-white font-body-md focus:bg-surface-container-low" id="cf-email" name="email" placeholder="EMAIL@DOMAIN.COM" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary-container uppercase" for="cf-type">Project.Type</label>
+<select class="w-full bg-surface-container-low/50 backdrop-blur-sm brutalist-border p-4 text-white font-body-md appearance-none focus:bg-surface-container-low" id="cf-type" name="project_type">
+<option>N8N_AUTOMATION</option>
+<option>CUSTOM_SCRIPT</option>
+<option>ANDROID_APP</option>
+<option>WEBSITE_BUILD</option>
+<option>OTHER</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary-container uppercase" for="cf-brief">Brief.Raw_Data</label>
+<textarea class="w-full bg-surface-container-low/50 backdrop-blur-sm brutalist-border p-4 text-white font-body-md resize-none focus:bg-surface-container-low" id="cf-brief" name="brief" placeholder="DESCRIBE THE TASK YOU WANT AUTOMATED OR THE PRODUCT YOU WANT BUILT..." required="" rows="6"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary-container text-white font-display-xl text-headline-md px-12 py-6 brutalist-shadow active:translate-y-1 no-transition uppercase tracking-tight animate-pulse-neon" type="submit">
+EXECUTE REQUEST
+</button>
+</form>
+</section>
+
+<!-- Sidebar -->
+<aside class="lg:col-span-5 space-y-12">
+<!-- Contact Info Card -->
+<div class="bg-surface-container/60 backdrop-blur-md brutalist-border p-8 brutalist-shadow">
+<h3 class="font-label-mono text-label-mono text-primary-container uppercase mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">terminal</span> CORE_NODE_DATA
+</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container">public</span>
+<div>
+<p class="font-label-mono text-label-mono text-white">OPERATING_ZONE</p>
+<p class="text-on-surface-variant">Remote — worldwide</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container">mail</span>
+<div>
+<p class="font-label-mono text-label-mono text-white">PACKET_ROUTING</p>
+<p class="text-on-surface-variant"><a class="hover:text-primary" href="mailto:hamzaakhyat09@gmail.com">hamzaakhyat09@gmail.com</a></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<div>
+<p class="font-label-mono text-label-mono text-white">RESPONSE_TIME</p>
+<p class="text-on-surface-variant">&lt; 24 hours (business days)</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Visual Asset -->
+<div class="relative h-64 overflow-hidden brutalist-border">
+<div class="w-full h-full bg-cover bg-center grayscale contrast-125 opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAwlHN5hNAE4hsLbITQ5AGUM_rSJzaRizhZvdnAuSDqqRUi4cD7CTWkdSzkfm2X9kA7X9OTTnQFIqkrex83L0bu3Tyq-CGoMp0mUGjSm2avTv6EIwvrbhGe-OcqkvMcNopfXBEVrPLcncNRiyubzKEWAoygUje0YWH_NRkxHNkRHGSAgo6lgqT-vkTAxzN1yRPxPV5JO9c14i0RU5tYZ77fzEq3PAfXQkvL63mTBK8oYsadoq9HjgsIkLTEH3NhqfuyLRykVuf')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<p class="font-label-mono text-label-mono text-white leading-tight">BASKI_AUTOMATION<br/>SYSTEMS_ARCHITECTURE</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-lowest/80 backdrop-blur-md border-t-4 border-surface-container-high">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-6 md:px-margin py-12 max-w-container-max mx-auto">
+<div>
+<div class="font-display-xl text-headline-md text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">dataset</span>
+<span>BASKI</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant max-w-sm">
+AUTOMATION FOR BUSINESSES THAT WANT TO SCALE.
+</p>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<div class="flex flex-col gap-2">
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="process.html">Process</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="mailto:hamzaakhyat09@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="#">GitHub</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary-container no-transition" href="#">LinkedIn</a>
+</div>
+</div>
+<div class="md:col-span-2 mt-8 pt-8 border-t border-white/5">
+<p class="font-label-mono text-label-mono text-on-surface-variant opacity-50">
+©2026 BASKI AUTOMATION. ALL RIGHTS RESERVED.
+</p>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/shader.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

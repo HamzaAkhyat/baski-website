@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Process — BASKI Automation</title>
+<meta name="description" content="How BASKI Automation works: audit, architecture, development and scale — a clear four-step process from bottleneck to automation."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff571a'/%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tw-config.js"></script>
+<link href="assets/css/site.css" rel="stylesheet"/>
+</head>
+<body class="flex flex-col min-h-screen font-body-md overflow-x-hidden bg-background">
+<div class="scanline"></div>
+
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center px-6 md:px-margin py-base max-w-container-max mx-auto h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span>BASKI</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono uppercase text-primary border-b-2 border-primary pb-1" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block brutalist-button-primary px-6 py-3 font-label-mono text-label-mono animate-pulse-neon" href="contact.html">
+GET STARTED
+</a>
+<button aria-label="Open menu" class="md:hidden text-on-surface" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden border-t border-surface-variant bg-background/95 backdrop-blur-md" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 gap-4 font-label-mono text-label-mono uppercase">
+<a class="text-on-surface" href="index.html">Home</a>
+<a class="text-on-surface" href="solutions.html">Solutions</a>
+<a class="text-primary" href="process.html">Process</a>
+<a class="text-on-surface" href="contact.html">Contact</a>
+<a class="bg-primary-container text-white px-4 py-3 font-bold text-center" href="contact.html">GET STARTED</a>
+</div>
+</div>
+</nav>
+
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="px-6 md:px-margin py-24 max-w-container-max mx-auto bg-transparent">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div>
+<h1 class="font-display-xl text-[48px] md:text-display-xl uppercase mb-6 leading-tight">
+Engineered <br/> <span class="text-primary">Execution.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
+I don't just write scripts. I design reliable automation systems — audited, architected, built and scaled with a clear process from day one.
+</p>
+<div class="flex gap-4">
+<div class="brutalist-border bg-surface-container/50 backdrop-blur-md p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="font-label-mono text-label-mono">SYSTEM_STABLE_V4.0</span>
+</div>
+</div>
+</div>
+<div class="relative h-96 lg:h-[500px] border-4 border-surface-container-high/50 overflow-hidden backdrop-blur-sm hidden lg:block">
+<div class="w-full h-full bg-cover bg-center grayscale opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAco_zMQh9aM3LAkYrLVX4IFN_wy9ohZYxUDWc9E7LV_u54PtILzw8KRnV5CYNC8UvTkinb1PSLreEXql3HDfdBx16-GctkocTp9Ut23_mFh1sz4pN8K7sxXs6S6w7Jz-MKXsli07TbCFR26oDzMsEW9mr-vWq55KT943c_dMmokecmxq67J32wsZ3lO7g7R2UcWdx69DWQoaqF12n12Ln6JOP1-9fwdiUqAZ_n9r5MU7L1SS4sslhPTZNaDTghUrrerdAx5VQF')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-60"></div>
+</div>
+</div>
+</section>
+
+<!-- The Process (Timeline) -->
+<section class="px-6 md:px-margin py-24 bg-surface-container-lowest/40 backdrop-blur-md border-t-4 border-surface-container-high/50">
+<div class="max-w-container-max mx-auto">
+<div class="mb-20">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest font-bold">The Lifecycle</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mt-2">Strategic Deployment</h2>
+</div>
+<div class="space-y-0">
+<!-- Step 1: Audit -->
+<div class="group relative grid grid-cols-1 md:grid-cols-12 gap-gutter py-16 brutalist-border border-x-0 border-b-0 hover:bg-primary/10 transition-all cursor-default">
+<div class="md:col-span-1">
+<span class="font-display-xl text-headline-lg text-outline opacity-20 group-hover:opacity-100 group-hover:text-primary group-hover:font-bold transition-all">01</span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md uppercase mb-4 group-hover:text-glow group-hover:text-primary transition-all">Audit</h3>
+<p class="font-body-md text-on-surface-variant">Deep-dive assessment of your current workflows. We identify bottlenecks, wasted hours and the automation opportunities with the biggest payoff.</p>
+</div>
+<div class="md:col-span-4 flex items-center justify-center">
+<div class="w-full h-32 bg-surface-container-high relative overflow-hidden brutalist-border group-hover:border-primary transition-colors">
+<div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100" role="img" aria-label="A macro cinematic shot of a computer motherboard with glowing orange light trails." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAco_zMQh9aM3LAkYrLVX4IFN_wy9ohZYxUDWc9E7LV_u54PtILzw8KRnV5CYNC8UvTkinb1PSLreEXql3HDfdBx16-GctkocTp9Ut23_mFh1sz4pN8K7sxXs6S6w7Jz-MKXsli07TbCFR26oDzMsEW9mr-vWq55KT943c_dMmokecmxq67J32wsZ3lO7g7R2UcWdx69DWQoaqF12n12Ln6JOP1-9fwdiUqAZ_n9r5MU7L1SS4sslhPTZNaDTghUrrerdAx5VQF')"></div>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> SYSTEM_MAPPING
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> RISK_ASSESSMENT
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> ROI_PROJECTION
+</div>
+</div>
+</div>
+<!-- Step 2: Architecture -->
+<div class="group relative grid grid-cols-1 md:grid-cols-12 gap-gutter py-16 border-t border-surface-variant hover:bg-primary/10 transition-all cursor-default">
+<div class="md:col-span-1">
+<span class="font-display-xl text-headline-lg text-outline opacity-20 group-hover:opacity-100 group-hover:text-primary group-hover:font-bold transition-all">02</span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md uppercase mb-4 group-hover:text-glow group-hover:text-primary transition-all">Architecture</h3>
+<p class="font-body-md text-on-surface-variant">Building the blueprint. The right tools for the job — n8n, custom code or both — designed so your automation keeps working under real-world load.</p>
+</div>
+<div class="md:col-span-4 flex items-center justify-center">
+<div class="w-full h-32 bg-surface-container-high relative overflow-hidden brutalist-border group-hover:border-primary transition-colors">
+<div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100" role="img" aria-label="Technical architectural blueprint rendered in glowing 3D lines against a pitch-black background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD97Vk65Syu6h-VirQMVIqx9rhP8LeO8-foJb3xjZGlGehowVqJ2VmJstpDu5-S08chLze74g4gesn9qNGQT0ets-GjYcLJcUOPAkdvaHbfBaEpdnF-uZH6Yr7qbnp3D2W6xCEDrL8nNf2cMvVOXnA2KyDgcd-I9zsTN99V6SbJVlmLPRqoEvK7G53Es6PgVEAjzgVGKOyWXpx4BN6-VJzgkT-_wgYElY7PJBD0BIYO_ll3dyFz3PBR6D4PTy2yxHsd3vMpwFN1')"></div>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> TOOL_SELECTION
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> API_ORCHESTRATION
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> DATA_DESIGN
+</div>
+</div>
+</div>
+<!-- Step 3: Development -->
+<div class="group relative grid grid-cols-1 md:grid-cols-12 gap-gutter py-16 border-t border-surface-variant hover:bg-primary/10 transition-all cursor-default">
+<div class="md:col-span-1">
+<span class="font-display-xl text-headline-lg text-outline opacity-20 group-hover:opacity-100 group-hover:text-primary group-hover:font-bold transition-all">03</span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md uppercase mb-4 group-hover:text-glow group-hover:text-primary transition-all">Development</h3>
+<p class="font-body-md text-on-surface-variant">Rapid build cycles with regular check-ins. Clean, tested code and workflows that integrate with the tools you already use.</p>
+</div>
+<div class="md:col-span-4 flex items-center justify-center">
+<div class="w-full h-32 bg-surface-container-high relative overflow-hidden brutalist-border group-hover:border-primary transition-colors">
+<div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100" role="img" aria-label="Close-up of a high-resolution code terminal with syntax highlighting in vibrant orange." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI0MhLYFtKLyIC4IaMQl64ond5_4wsdZlJLwHsqnnryMb2ynLZpaOJfeD3LwVEIzJ3aERadtttK_pRlvLK8dPNHiR94KGKUhXbY2lE18iaPUQnqGL3PaMjvVYIo3cIBWjLgmXkJtHEAvIxvq0yjHgWoqzsl9zq7TC5SQWePWq-fGh-rPrgB2iozu_E1gRchsP924P6RLPhootfc5mSftYSisp4XEqTdJXlyOUjicJzrkQOwD56Fw2lhERzFNLc05aDJRNffouM')"></div>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> CUSTOM_MODULES
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> TESTING
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> INTEGRATION
+</div>
+</div>
+</div>
+<!-- Step 4: Scale -->
+<div class="group relative grid grid-cols-1 md:grid-cols-12 gap-gutter py-16 border-t border-surface-variant hover:bg-primary/10 transition-all cursor-default">
+<div class="md:col-span-1">
+<span class="font-display-xl text-headline-lg text-outline opacity-20 group-hover:opacity-100 group-hover:text-primary group-hover:font-bold transition-all">04</span>
+</div>
+<div class="md:col-span-4">
+<h3 class="font-headline-md text-headline-md uppercase mb-4 group-hover:text-glow group-hover:text-primary transition-all">Scale</h3>
+<p class="font-body-md text-on-surface-variant">Deployment, monitoring and support. Your automation keeps running, keeps growing, and I stay available when you want to extend it.</p>
+</div>
+<div class="md:col-span-4 flex items-center justify-center">
+<div class="w-full h-32 bg-surface-container-high relative overflow-hidden brutalist-border group-hover:border-primary transition-colors">
+<div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-110 group-hover:scale-100" role="img" aria-label="An abstract visualization of a massive network expanding across a dark void." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxEgzvWVnDin6wvXbiUZra_N0-mW6oNXUWBeKNVIgi0GTbewGgvejA1rF6T74ohitcnvGd84PrUCJh47jt9dBUy2x3oHA2v3fBVAKgKGu51w-hu3kjFAo-5B91dHJeASaNBTPW9GiI45oDZIT5V2amqfwFYP30vvUJTh0x9vaKRyj5aUmb3uYU_71j1jPb1qhGQHaNlW2-tSsq59QM6GmjxL6j7VYOG3XuePhTOtxHLPXO_iNHmrlUeydbaf4e8I_rAzNIKGWo')"></div>
+</div>
+</div>
+<div class="md:col-span-3 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> DEPLOYMENT
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> MONITORING
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span> SUPPORT
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Expertise Grid -->
+<section class="px-6 md:px-margin py-24 max-w-container-max mx-auto bg-transparent">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest font-bold">Stack Expertise</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mt-2">Technical Capabilities</h2>
+</div>
+<div class="font-label-mono text-label-mono brutalist-border px-6 py-2 bg-primary text-black font-bold">
+RESOURCES_ALLOCATED: 100%
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="brutalist-border p-8 bg-surface-container-low/60 backdrop-blur-sm hover:border-primary transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">account_tree</span>
+<h4 class="font-headline-md text-headline-md uppercase mb-4">n8n Workflows</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Multi-app automations with triggers, branching logic and error handling built in.</p>
+</div>
+<div class="brutalist-border p-8 bg-surface-container-low/60 backdrop-blur-sm hover:border-primary transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">smartphone</span>
+<h4 class="font-headline-md text-headline-md uppercase mb-4">Android Dev</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Native apps for business operations — from prototype to published release.</p>
+</div>
+<div class="brutalist-border p-8 bg-surface-container-low/60 backdrop-blur-sm hover:border-primary transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">api</span>
+<h4 class="font-headline-md text-headline-md uppercase mb-4">API Mesh</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Secure, reliable connections between the SaaS platforms your business runs on.</p>
+</div>
+<div class="brutalist-border p-8 bg-surface-container-low/60 backdrop-blur-sm hover:border-primary transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">monitoring</span>
+<h4 class="font-headline-md text-headline-md uppercase mb-4">Live Ops</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Monitoring and alerting so you know your automations are healthy 24/7.</p>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="px-6 md:px-margin py-24 mb-24 bg-transparent">
+<div class="max-w-container-max mx-auto bg-primary/90 backdrop-blur-md p-12 md:p-24 flex flex-col items-center text-center brutalist-border border-4 border-black relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-black/20"></div>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-black/20"></div>
+<h2 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-black uppercase mb-8 relative z-10">Ready to <br/> <span class="underline decoration-black decoration-8">Automate?</span></h2>
+<p class="font-body-lg text-body-lg text-black max-w-2xl mb-12 font-medium relative z-10">
+Tell me about your workflow and I'll show you exactly what can be automated — and what it will save you.
+</p>
+<a class="bg-black text-primary px-12 py-5 font-headline-md uppercase tracking-widest hover:translate-x-2 hover:-translate-y-2 transition-transform duration-200 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)] relative z-10 active:shadow-none active:translate-x-0 active:translate-y-0" href="contact.html">
+INITIATE CONTACT
+</a>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-lowest/80 backdrop-blur-md border-t-4 border-surface-container-high">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-6 md:px-margin py-12 max-w-container-max mx-auto">
+<div>
+<div class="font-display-xl text-headline-md text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">dataset</span>
+<span>BASKI</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant max-w-xs mb-8">
+BRUTALIST EFFICIENCY FOR THE MODERN BUSINESS.
+</p>
+<div class="flex gap-4">
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">GITHUB</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">X / TWITTER</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors" href="#">LINKEDIN</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 font-label-mono text-label-mono">
+<div class="flex flex-col gap-3">
+<span class="text-primary uppercase mb-2">Pages</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="solutions.html">Solutions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-primary uppercase mb-2">Contact</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:hamzaakhyat09@gmail.com">Email</a>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-margin pb-8 max-w-container-max mx-auto">
+<p class="font-label-mono text-label-mono text-on-surface-variant uppercase opacity-50">©2026 BASKI AUTOMATION. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+
+<script src="assets/js/shader.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

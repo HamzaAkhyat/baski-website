@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solutions — BASKI Automation</title>
+<meta name="description" content="n8n workflows, Android apps, websites, scraping bots, chat bots and API integrations — the BASKI Automation service catalog."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff571a'/%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tw-config.js"></script>
+<link href="assets/css/site.css" rel="stylesheet"/>
+</head>
+<body class="flex flex-col min-h-screen font-body-md overflow-x-hidden bg-background">
+<div class="scanline"></div>
+
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center px-6 md:px-margin py-base max-w-container-max mx-auto h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span>BASKI</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono uppercase text-primary border-b-2 border-primary pb-1" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block bg-primary-container text-white font-label-mono text-label-mono px-6 py-3 uppercase font-bold active:translate-y-1 transition-transform brutal-shadow animate-pulse-neon" href="contact.html">
+GET STARTED
+</a>
+<button aria-label="Open menu" class="md:hidden text-on-surface" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden border-t border-surface-variant bg-background/95 backdrop-blur-md" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 gap-4 font-label-mono text-label-mono uppercase">
+<a class="text-on-surface" href="index.html">Home</a>
+<a class="text-primary" href="solutions.html">Solutions</a>
+<a class="text-on-surface" href="process.html">Process</a>
+<a class="text-on-surface" href="contact.html">Contact</a>
+<a class="bg-primary-container text-white px-4 py-3 font-bold text-center" href="contact.html">GET STARTED</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-transparent py-24 px-6 md:px-margin">
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="max-w-3xl">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-[0.2em] mb-4 block neon-glow">Deployment Center</span>
+<h1 class="font-display-xl text-[48px] md:text-display-xl text-on-background mb-6 uppercase">
+ENGINEERED<br/>SOLUTIONS.
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl border-l-4 border-primary pl-6 bg-background/20 backdrop-blur-sm py-2">
+Everything I build for clients — automation workflows, apps, websites and bots designed for rapid delivery and precision execution.
+</p>
+</div>
+</div>
+</section>
+
+<!-- Solutions Grid -->
+<main class="flex-grow bg-transparent py-16 px-6 md:px-margin">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+<!-- n8n Workflows -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="A dark, technical architectural blueprint of a server infrastructure with glowing neon orange highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUBBBzzcHdCEZ-atbgK9KJ5tQk0gsS0wfEM6fMbyjdeY-SlTBITey_OBX5ExHvK7Eie62KzjsNKw_0tv48YseHe4DvwUBXtVEcTOStikAgRjiGXlZpbtlNvsFaNM2S2IZZJfV4hzXFAqg5zNCM_UXm9Ho2oVa6JwKtMcoLX4Qzky74zXvvcwX9DA37X9KyK8GcivZNQwnyPRaGQOhw6xF6t0txa0BXHHdGXlnCu5YT9ai_V0UcYjNRl88TlGGkPz3SFHXCjDGi')"></div>
+<div class="absolute top-4 right-4 bg-primary text-black font-label-mono text-xs px-2 py-1 shadow-[0_0_10px_rgba(255,87,26,0.5)]">CORE</div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">n8n Workflows</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Custom n8n automations connecting your apps — CRM, email, sheets, social — into one hands-free pipeline.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">account_tree</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">n8n</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">webhook</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Webhooks</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">api</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">APIs</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+<!-- Android Apps -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="A macro visualization of complex neural network nodes connecting in a dark 3D space." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6g-uxT4FC0ZovzPVR-eqhsjA76piVwRHoeVqiKmxtk0aRolQQSdFFOmRySs4_6rdw6vcqfK0v61XneuEuKkPMDfHzAbHl4znXo0ccHaBfH_PVM2kcWgUS0G6c8ORnHyya1ggBOVXjSptgBnpZtl4QkWe1ErKqciPC4-uRPM3-slh753OD8xd_8dDYyDgxbHOdHYPca0OiJ4fPgEIwi1lCtdw_dyzP2WGoA8PYfOCGzxZf_WTjHmQfTmc9HjYc5QBQM1EIU53w')"></div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">Android Apps</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Business Android apps — booking, delivery tracking, internal tools — designed, built and published.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">smartphone</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Android</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">code</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Kotlin</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">local_fire_department</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Firebase</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+<!-- Websites -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="A sleek, futuristic workspace with multiple wide screens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBG8cGpwHWfjtptbV1m11bxRuTyHm6mLut-yVg0Rey3p38zwRRF9joOQgQEKSYI13bWFDDqrTEuWLXidUEMMQP_dB4DNOmyw2S4o90k0RDOn7hpzYU027iZ-DMrBOnNu-qkAlRjTBi6FJiFf9YW5ryCf_1shjLslBBMAcqxeI0FP3HkTst9B0e92aBLOA-3AXHlvEq7tnXBcdVpwMSAQMJgI-aRsj7Iu6fMu6XVLN4Ys6IX6gBZ3GP28QhSGM93DbX80GsA1G2a')"></div>
+<div class="absolute top-4 right-4 bg-primary text-black font-label-mono text-xs px-2 py-1 shadow-[0_0_10px_rgba(255,87,26,0.5)]">FAST</div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">Websites</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Landing pages and business websites that load fast, look sharp and convert visitors into clients.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">html</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">HTML/CSS</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">javascript</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">JavaScript</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">bolt</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Tailwind</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+<!-- Scraping Bots -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="Cybersecurity data streams falling vertically in a digital void." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfZlWW2t0PrIhWv_PnQX6RDgXbJ1TnLvLl8_QhAd3YTyNxJvTbNMXXbE7SwDAgiFTEN8mROAgHBP1JsyCqgplzdxOq88zHP4SwAjUokviKuPTU6TuvGDWj4isS1DVafk3-p-yACq3cJz1GFlZXQxuMCL9YndPwu55BsIaJw7CKBwwOw4pItA9_k1zvh5teiNOSXHPRX146KWSEOENjYXR7Km-eVssle6e-9lXuJt7BsSUBOMCeApKEcoNPu0NCNxeO1k6XHDHR')"></div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">Scraping Bots</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Data scraping and monitoring bots that collect prices, leads or listings on schedule — delivered to your sheet or inbox.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">terminal</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Python</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">travel_explore</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Selenium</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">schedule</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Cron</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+<!-- Chat Bots -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="Abstract data visualization of a global network." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBohVtHACPPfb2BdYhiXi_XuCta0mqH_P_e3WkKLXKWxPJanT1BjMbCCgV2VDKB-DVTdtosDQ0usti7akicaan3oWVNFGSzrd3MpdzwdeEzOfh8Vrs-MMXXnui0bZlNF8wWC-5GN93KNPGgZU3CTvyF164rDSgLzStzkUy-ws1M14g-Nce-SrtSwhfjBEqewxvF5SOJ_oXMSzMxPDU_GJEMPt1Jzj_7ZFCHZj1eoCmC2dcb-pO043al9Zv14eVpTbNQGpy6nrcH')"></div>
+<div class="absolute top-4 right-4 bg-primary text-black font-label-mono text-xs px-2 py-1 shadow-[0_0_10px_rgba(255,87,26,0.5)]">24/7</div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">Chat Bots</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Telegram and WhatsApp bots for customer support, order taking and instant notifications — always online.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">send</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">Telegram</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">chat</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">WhatsApp</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">account_tree</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">n8n</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+<!-- API Integrations -->
+<div class="brutalist-card bg-surface-container-low/80 backdrop-blur-sm p-base flex flex-col border border-surface-variant transition-all duration-75">
+<div class="relative h-48 mb-6 overflow-hidden border border-surface-variant bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105 opacity-80" role="img" aria-label="An artistic representation of digital memory blocks stacked in a massive, orderly grid." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHGRJs1i_ft_OAXWo96fXbrDnlfj74DXPyj5urLAT4nKccHYUJTNbAX3DdbxMC8C74PqqfQVmhcryMQWESMJd0KudJ4Odgq3vB1Cr4Q5Q7XL1MoqIezfAYgew8wA977gbebGNBzdmQyQnIPvRn4VOX4XHvxvRXyJczego4CuW0OkEuJgWf7WefzOpEQBiOr0o_y7VOSUKBEPvjRueEGDd_616G1Dee_O1oQxFRCoUhHpsRhGbX-hPjx3i7di1TIZgUkL4K5XXV')"></div>
+</div>
+<div class="px-2 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase">API Integrations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[3rem]">
+Custom integrations that glue your tools together when no off-the-shelf connector exists.
+</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">api</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">REST</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">data_object</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">JSON</span>
+</div>
+<div class="tech-pill px-3 py-1 flex items-center gap-2 bg-background/40">
+<span class="material-symbols-outlined text-sm text-primary">key</span>
+<span class="font-label-mono text-xs uppercase text-on-surface">OAuth</span>
+</div>
+</div>
+</div>
+<a class="w-full py-4 bg-transparent border-2 border-primary text-primary font-label-mono font-bold uppercase tracking-wider text-center hover:bg-primary hover:text-black transition-all duration-75 active:translate-y-1 mb-2" href="contact.html">
+REQUEST BUILD
+</a>
+</div>
+
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-lowest/90 backdrop-blur-md border-t-4 border-primary">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-6 md:px-margin py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-display-xl text-headline-md text-on-surface neon-glow flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">dataset</span>
+<span>BASKI</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant max-w-sm">
+Automation development — custom scripts, Android apps, websites and n8n workflows.
+</p>
+<p class="font-label-mono text-label-mono text-on-surface-variant mt-8 uppercase opacity-50">
+©2026 BASKI AUTOMATION. ALL RIGHTS RESERVED.
+</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-3">
+<span class="font-label-mono text-label-mono text-primary uppercase mb-2">Pages</span>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-mono text-label-mono text-primary uppercase mb-2">Contact</span>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="mailto:hamzaakhyat09@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">GitHub</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/shader.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

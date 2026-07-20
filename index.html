@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BASKI Automation — Scripts, Android Apps, Websites &amp; n8n Automation</title>
+<meta name="description" content="BASKI Automation builds custom scripts, Android apps, websites and n8n automation workflows that eliminate busywork and scale your business."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff571a'/%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tw-config.js"></script>
+<link href="assets/css/site.css" rel="stylesheet"/>
+</head>
+<body class="flex flex-col min-h-screen font-body-md overflow-x-hidden bg-background">
+<div class="scanline"></div>
+
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center px-6 md:px-margin py-base max-w-container-max mx-auto h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span>BASKI</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono uppercase text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block bg-primary-container text-white font-label-mono text-label-mono px-6 py-3 uppercase font-bold active:translate-y-1 transition-transform brutal-shadow" href="contact.html">
+GET STARTED
+</a>
+<button aria-label="Open menu" class="md:hidden text-on-surface" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden border-t border-surface-variant bg-background/95 backdrop-blur-md" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 gap-4 font-label-mono text-label-mono uppercase">
+<a class="text-primary" href="index.html">Home</a>
+<a class="text-on-surface" href="solutions.html">Solutions</a>
+<a class="text-on-surface" href="process.html">Process</a>
+<a class="text-on-surface" href="contact.html">Contact</a>
+<a class="bg-primary-container text-white px-4 py-3 font-bold text-center" href="contact.html">GET STARTED</a>
+</div>
+</div>
+</nav>
+
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden border-b border-surface-container-high bg-transparent">
+<div class="relative z-10 px-6 md:px-margin max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 flex flex-col justify-center py-20">
+<div class="inline-block self-start px-3 py-1 bg-primary-container text-white font-label-mono text-label-mono mb-6 uppercase tracking-[0.2em]">
+System Status: Open for projects
+</div>
+<h1 class="font-display-xl text-[48px] md:text-display-xl leading-none text-on-surface mb-6 uppercase">
+AUTOMATE<br/>
+<span class="text-primary-container">EVERYTHING</span>
+</h1>
+<p class="font-headline-md text-lg md:text-headline-md text-on-surface-variant max-w-2xl mb-10 border-l-4 border-primary-container pl-6 uppercase tracking-wider">
+Scripts. Android apps. Websites. n8n workflows.<br/>I build systems that work while you sleep.
+</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-container text-white font-label-mono text-label-mono px-8 py-5 uppercase font-bold text-lg active:translate-y-1 brutal-shadow" href="contact.html">
+Start a project
+</a>
+<a class="border-2 border-on-surface text-on-surface font-label-mono text-label-mono px-8 py-5 uppercase font-bold text-lg hover:bg-on-surface hover:text-background transition-none active:translate-y-1" href="solutions.html">
+View solutions
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 hidden lg:flex flex-col justify-center space-y-4">
+<div class="p-6 bg-surface-container-low/60 backdrop-blur-sm border border-surface-variant brutal-shadow">
+<div class="text-primary-container font-label-mono text-xs mb-2">CORE_SERVICES</div>
+<div class="text-3xl font-display-xl tracking-tighter">04</div>
+</div>
+<div class="p-6 bg-surface-container-low/60 backdrop-blur-sm border border-surface-variant brutal-shadow">
+<div class="text-primary-container font-label-mono text-xs mb-2">PRIMARY_STACK</div>
+<div class="text-2xl font-display-xl tracking-tighter">n8n / Python / Android</div>
+</div>
+<div class="p-6 bg-primary-container text-white brutal-shadow">
+<div class="font-label-mono text-xs mb-2 text-white/80">RESPONSE_TIME</div>
+<div class="text-3xl font-display-xl tracking-tighter">&lt; 24H</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Core Services -->
+<section class="py-24 px-6 md:px-margin max-w-container-max mx-auto bg-transparent">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg uppercase mb-4">Core Services</h2>
+<p class="font-body-lg text-on-surface-variant">Everything you need to remove manual work from your business.</p>
+</div>
+<div class="font-label-mono text-label-mono text-primary-container uppercase tracking-widest border-b border-primary-container pb-2">
+Modules_V2.0
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Custom Scripts -->
+<a class="group bg-surface-container-low/40 backdrop-blur-sm border border-surface-variant p-8 flex flex-col justify-between min-h-[360px] hover:border-primary-container transition-colors brutal-shadow-hover" href="solutions.html">
+<div>
+<div class="w-16 h-16 bg-surface-container-high/60 border border-surface-variant flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">Custom Scripts</h3>
+<p class="font-body-md text-on-surface-variant">Bots and scripts that handle repetitive work — scraping, data processing, scheduled reports.</p>
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-primary-container pt-8 uppercase">
+<span>Request build</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</a>
+<!-- Android Apps -->
+<a class="group bg-surface-container-low/40 backdrop-blur-sm border border-surface-variant p-8 flex flex-col justify-between min-h-[360px] hover:border-primary-container transition-colors brutal-shadow-hover" href="solutions.html">
+<div>
+<div class="w-16 h-16 bg-surface-container-high/60 border border-surface-variant flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">smartphone</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">Android Apps</h3>
+<p class="font-body-md text-on-surface-variant">Business Android applications built from idea to store — booking, tracking, internal tools.</p>
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-primary-container pt-8 uppercase">
+<span>Request build</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</a>
+<!-- Websites -->
+<a class="group bg-surface-container-low/40 backdrop-blur-sm border border-surface-variant p-8 flex flex-col justify-between min-h-[360px] hover:border-primary-container transition-colors brutal-shadow-hover" href="solutions.html">
+<div>
+<div class="w-16 h-16 bg-surface-container-high/60 border border-surface-variant flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">language</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">Websites</h3>
+<p class="font-body-md text-on-surface-variant">Fast, modern websites and landing pages engineered to turn visitors into clients.</p>
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-primary-container pt-8 uppercase">
+<span>Request build</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</a>
+<!-- n8n Automation -->
+<a class="group bg-surface-container-low/40 backdrop-blur-sm border border-surface-variant p-8 flex flex-col justify-between min-h-[360px] hover:border-primary-container transition-colors brutal-shadow-hover" href="solutions.html">
+<div>
+<div class="w-16 h-16 bg-surface-container-high/60 border border-surface-variant flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase mb-4">n8n Automation</h3>
+<p class="font-body-md text-on-surface-variant">End-to-end n8n workflows connecting your CRM, email, sheets and APIs — zero manual steps.</p>
+</div>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-primary-container pt-8 uppercase">
+<span>Request build</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+
+<!-- Featured Workflow (replace with a real project of yours) -->
+<section class="py-24 bg-surface-container-lowest/20 backdrop-blur-sm border-y border-surface-container-high">
+<div class="px-6 md:px-margin max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative border-4 border-black brutal-shadow">
+<div class="bg-cover bg-center aspect-video w-full" role="img" aria-label="A futuristic data center interior with glowing orange lights and server racks in a dark environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwShRHGf62WaClrCgIhiU641zLsIOqXP_HLxUKcxALpB0SWrkYLCCOBgoLuVXrbQmCtfan0-Noiu-t6rpifpOZMIqXJej0hMiG5PS8bRqLWkVgSgHMjR8R9yyiBQzUEjEcE652FFFMTrrvNbWqZLtNjd20TblezJ6An5CvdSdfDSv3tC8nhsQZx6mcWIQuanAi_ZH65HVdoqJN8I0e5_g38UpQJjoCkkVrTPdSQtHWSzDAB9xzPOBtX91zOvFnAfOu77HgZtIz')"></div>
+<div class="absolute inset-0 bg-primary-container/10"></div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
+<div class="font-label-mono text-label-mono text-primary-container">SAMPLE_WORKFLOW: LEAD_INTAKE</div>
+<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg uppercase leading-tight">Lead intake,<br/>fully automated</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+Example build: web forms, WhatsApp and Google Sheets connected through n8n so every new lead is captured, qualified and answered automatically — no copy-pasting, no missed messages.
+</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 border border-surface-variant bg-surface-container/30 backdrop-blur-sm">
+<div class="text-label-mono text-on-surface-variant uppercase mb-1">Manual work</div>
+<div class="text-3xl font-headline-lg text-primary">-90%</div>
+</div>
+<div class="p-4 border border-surface-variant bg-surface-container/30 backdrop-blur-sm">
+<div class="text-label-mono text-on-surface-variant uppercase mb-1">Lead response</div>
+<div class="text-3xl font-headline-lg text-primary">Instant</div>
+</div>
+</div>
+<a class="inline-block bg-on-surface text-background font-label-mono text-label-mono px-8 py-4 uppercase font-bold w-full md:w-auto text-center hover:bg-primary-container hover:text-white transition-colors brutal-shadow" href="contact.html">
+Build yours
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Tech Stack Marquee -->
+<section class="py-20 overflow-hidden bg-transparent">
+<div class="px-6 md:px-margin max-w-container-max mx-auto mb-10">
+<h3 class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest text-center">Compatible Protocols</h3>
+</div>
+<div class="flex whitespace-nowrap overflow-hidden border-y border-surface-variant py-8 bg-black/40 backdrop-blur-sm">
+<div class="flex gap-20 animate-marquee items-center text-4xl font-display-xl text-surface-container-highest uppercase grayscale opacity-50">
+<span>Python</span>
+<span>n8n</span>
+<span>Android</span>
+<span>Kotlin</span>
+<span>JavaScript</span>
+<span>REST APIs</span>
+<span>Webhooks</span>
+<span>Google Sheets</span>
+<span>Telegram Bots</span>
+<span>WordPress</span>
+</div>
+<div class="flex gap-20 animate-marquee items-center text-4xl font-display-xl text-surface-container-highest uppercase grayscale opacity-50 ml-20">
+<span>Python</span>
+<span>n8n</span>
+<span>Android</span>
+<span>Kotlin</span>
+<span>JavaScript</span>
+<span>REST APIs</span>
+<span>Webhooks</span>
+<span>Google Sheets</span>
+<span>Telegram Bots</span>
+<span>WordPress</span>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-32 px-6 md:px-margin text-center relative overflow-hidden bg-primary-container text-white">
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="font-display-xl text-[40px] md:text-display-xl uppercase mb-8">Ready to Scale?</h2>
+<p class="font-headline-md text-headline-md mb-12 opacity-90 uppercase">Eliminate the busywork. Automate with BASKI today.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-background text-primary-container font-label-mono text-label-mono px-12 py-6 uppercase font-extrabold text-xl brutal-shadow active:translate-y-1" href="contact.html">
+Get Started
+</a>
+<a class="border-2 border-white text-white font-label-mono text-label-mono px-12 py-6 uppercase font-extrabold text-xl hover:bg-white hover:text-primary-container transition-none" href="process.html">
+See the process
+</a>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-lowest/80 backdrop-blur-lg border-t-4 border-surface-container-high">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-6 md:px-margin py-12 max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-display-xl text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">dataset</span>
+<span>BASKI</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">
+Automation development — custom scripts, Android apps, websites and n8n workflows for businesses that want to scale.
+</p>
+<div class="text-primary-container font-label-mono text-xs uppercase tracking-tighter">
+©2026 BASKI AUTOMATION. ALL RIGHTS RESERVED.
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-mono text-label-mono text-on-surface uppercase font-bold">Pages</h4>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-mono text-label-mono text-on-surface uppercase font-bold">Contact</h4>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="mailto:hamzaakhyat09@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">GitHub</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/shader.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
