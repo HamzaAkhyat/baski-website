@@ -33,20 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact form: open a pre-filled email until a form service is connected
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('cf-name').value.trim();
-      const email = document.getElementById('cf-email').value.trim();
-      const type = document.getElementById('cf-type').value;
-      const brief = document.getElementById('cf-brief').value.trim();
-      const subject = encodeURIComponent('[BASKI] New project request: ' + type);
-      const body = encodeURIComponent(
-        'Name: ' + name + '\nEmail: ' + email + '\nProject type: ' + type + '\n\nBrief:\n' + brief
-      );
-      window.location.href = 'mailto:hamzaakhyat09@gmail.com?subject=' + subject + '&body=' + body;
-    });
-  }
+  // Contact form is handled by Netlify Forms (plain POST, redirects to /thanks.html)
 });

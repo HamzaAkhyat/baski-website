@@ -58,7 +58,11 @@ Tell me what you want to automate — a script, an Android app, a website or an 
 I reply within 24 hours (business days).
 </p>
 </div>
-<form class="space-y-10" id="contact-form">
+<form action="/thanks.html" class="space-y-10" data-netlify="true" id="contact-form" method="POST" name="contact" netlify-honeypot="bot-field">
+<input name="form-name" type="hidden" value="contact"/>
+<p class="hidden">
+<label>Don't fill this out if you're human: <input name="bot-field"/></label>
+</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="space-y-2">
 <label class="font-label-mono text-label-mono text-primary-container uppercase" for="cf-name">User.Identity</label>
