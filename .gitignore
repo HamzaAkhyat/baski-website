@@ -1,2 +1,5 @@
 TEST/
 *.txt
+
+# Local Netlify folder
+.netlify
