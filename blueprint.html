@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blueprint — BASKI Automation</title>
+<meta name="description" content="A proven n8n automation blueprint from BASKI Automation — how it works, the stack it connects, and the outcomes it delivers."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23ff571a'/%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Geist:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tw-config.js"></script>
+<link href="assets/css/site.css" rel="stylesheet"/>
+</head>
+<body class="flex flex-col min-h-screen font-body-md overflow-x-hidden bg-background selection:bg-primary-container selection:text-white">
+<div class="scanline"></div>
+
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-surface-variant">
+<div class="flex justify-between items-center px-6 md:px-margin py-base max-w-container-max mx-auto h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span>BASKI</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono uppercase text-on-surface hover:bg-primary hover:text-black transition-none px-2 py-1" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block bg-primary-container text-white font-label-mono text-label-mono px-6 py-3 uppercase font-bold active:translate-y-1 brutal-shadow" href="contact.html">
+GET STARTED
+</a>
+<button aria-label="Open menu" class="md:hidden text-on-surface" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<div class="hidden md:hidden border-t border-surface-variant bg-background/95 backdrop-blur-md" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 gap-4 font-label-mono text-label-mono uppercase">
+<a class="text-on-surface" href="index.html">Home</a>
+<a class="text-on-surface" href="solutions.html">Solutions</a>
+<a class="text-on-surface" href="process.html">Process</a>
+<a class="text-on-surface" href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<main class="flex-grow max-w-container-max mx-auto w-full px-6 md:px-margin py-16" id="bp-root">
+<!-- Content injected by JS -->
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-lowest/80 backdrop-blur-lg border-t-4 border-surface-container-high">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-6 md:px-margin py-12 max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-display-xl text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">dataset</span>
+<span>BASKI</span>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">
+Automation development — custom scripts, Android apps, websites and n8n workflows for businesses that want to scale.
+</p>
+<div class="text-primary-container font-label-mono text-xs uppercase tracking-tighter">
+©2026 BASKI AUTOMATION. ALL RIGHTS RESERVED.
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h4 class="font-label-mono text-label-mono text-on-surface uppercase font-bold">Pages</h4>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="index.html">Home</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="solutions.html">Solutions</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="process.html">Process</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-mono text-label-mono text-on-surface uppercase font-bold">Contact</h4>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="mailto:hamzaakhyat09@gmail.com">Email</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">GitHub</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-none" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/shader.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/blueprints-data.js"></script>
+<script src="assets/js/blueprint-page.js"></script>
+</body>
+</html>
