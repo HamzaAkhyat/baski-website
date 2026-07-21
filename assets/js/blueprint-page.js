@@ -32,6 +32,26 @@
 
   document.title = bp.title + ' — BASKI Automation';
 
+  // Workflow diagram — n8n-style node graph built from the steps.
+  var diagram = bp.steps.map(function (s, i) {
+    var n = (i + 1 < 10 ? '0' : '') + (i + 1);
+    var node =
+      '<div class="flow-node shrink-0 w-full md:w-44 bg-surface-container/70 backdrop-blur-sm brutalist-border p-4 text-center brutal-shadow">' +
+        '<div class="w-12 h-12 mx-auto mb-3 bg-primary-container text-white flex items-center justify-center">' +
+          '<span class="material-symbols-outlined text-2xl">' + s.icon + '</span>' +
+        '</div>' +
+        '<div class="font-label-mono text-[10px] text-primary-container uppercase mb-1">NODE_' + n + '</div>' +
+        '<div class="font-headline-md text-sm uppercase leading-tight text-on-surface">' + s.t + '</div>' +
+      '</div>';
+    var connector = (i < bp.steps.length - 1)
+      ? '<div class="flex items-center justify-center text-primary-container shrink-0 py-2 md:py-0 md:px-1">' +
+          '<span class="material-symbols-outlined text-3xl hidden md:block">arrow_forward</span>' +
+          '<span class="material-symbols-outlined text-3xl md:hidden">arrow_downward</span>' +
+        '</div>'
+      : '';
+    return node + connector;
+  }).join('');
+
   var steps = bp.steps.map(function (s, i) {
     var n = (i + 1 < 10 ? '0' : '') + (i + 1);
     return (
@@ -85,6 +105,14 @@
 
     // Outcomes
     '<div class="grid grid-cols-3 gap-4 mb-16 max-w-2xl">' + outcomes + '</div>' +
+
+    // Workflow diagram
+    '<div class="mb-20">' +
+      '<h2 class="font-label-mono text-label-mono text-primary-container uppercase mb-8">// Workflow</h2>' +
+      '<div class="bg-black/30 backdrop-blur-sm border border-surface-variant p-6 md:p-10 overflow-x-auto">' +
+        '<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 min-w-full">' + diagram + '</div>' +
+      '</div>' +
+    '</div>' +
 
     // Body grid
     '<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">' +
